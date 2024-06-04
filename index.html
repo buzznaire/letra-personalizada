@@ -2,72 +2,8 @@
 <html lang="pt">
     <head>
         <meta charset="UTF-8" />
-        <script>
-            var __ezHttpConsent = {
-                setByCat: function (src, tagType, attributes, category, force) {
-                    var setScript = function () {
-                        if (force || window.ezTcfConsent[category]) {
-                            var scriptElement = document.createElement(tagType);
-                            scriptElement.src = src;
-                            attributes.forEach(function (attr) {
-                                for (var key in attr) {
-                                    if (attr.hasOwnProperty(key)) {
-                                        scriptElement.setAttribute(key, attr[key]);
-                                    }
-                                }
-                            });
-                            var firstScript = document.getElementsByTagName(tagType)[0];
-                            firstScript.parentNode.insertBefore(scriptElement, firstScript);
-                        }
-                    };
-                    if (force || (window.ezTcfConsent && window.ezTcfConsent.loaded)) {
-                        setScript();
-                    } else if (typeof getEzConsentData === "function") {
-                        getEzConsentData().then(function (ezTcfConsent) {
-                            if (ezTcfConsent && ezTcfConsent.loaded) {
-                                setScript();
-                            } else {
-                                console.error("cannot get ez consent data");
-                                force = true;
-                                setScript();
-                            }
-                        });
-                    } else {
-                        force = true;
-                        setScript();
-                        console.error("getEzConsentData is not a function");
-                    }
-                },
-            };
-        </script>
-        <script>
-            var ezTcfConsent = window.ezTcfConsent
-                ? window.ezTcfConsent
-                : {
-                      loaded: false,
-                      store_info: false,
-                      develop_and_improve_services: false,
-                      measure_ad_performance: false,
-                      measure_content_performance: false,
-                      select_basic_ads: false,
-                      create_ad_profile: false,
-                      select_personalized_ads: false,
-                      create_content_profile: false,
-                      select_personalized_content: false,
-                      understand_audiences: false,
-                      use_limited_data_to_select_content: false,
-                  };
-            function getEzConsentData() {
-                return new Promise(function (resolve) {
-                    document.addEventListener("ezConsentEvent", function (event) {
-                        var ezTcfConsent = event.detail.ezTcfConsent;
-                        resolve(ezTcfConsent);
-                    });
-                });
-            }
-        </script>
 
-        <base href="https://buzznaire.github.iom/" />
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Letras Diferentes Para Instagram, Facebook e Discord</title>
@@ -83,7 +19,7 @@
                 "@type": "WebApplication",
                 "@id": "https://buzznaire.github.io/",
                 "url": "https://buzznaire.github.io/",
-                "screenshot": "https://buzznaire.github.io/img/elitefont.png",
+                "screenshot": "https://buzznaire.github.io/img/Buzznaire .png",
                 "name": "Buzznaire Letra Personalizada",
                 "applicationCategory": "SoftwareApplication",
                 "applicationSuite": "Buzznaire Letra Personalizada",
@@ -91,7 +27,7 @@
                 "browserRequirements": "Requires Javascript and HTML5 support",
                 "isAccessibleForFree": true,
                 "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.5", "reviewCount": "2" },
-                "creator": { "@type": "person", "@id": "#person", "url": "https://buzznaire.github.io/", "name": "Buzznaire Letra Personalizada", "logo": "https://buzznaire.github.io/img/elitefont-logo.png" }
+                "creator": { "@type": "person", "@id": "#person", "url": "https://buzznaire.github.io/", "name": "Buzznaire Letra Personalizada", "logo": "https://buzznaire.github.io/img/Buzznaire -logo.png" }
             }
         </script>
         <link rel="canonical" href="https://buzznaire.github.io/" />
@@ -127,16 +63,16 @@
                     </button>
                     <div class="nav__overlay">
                         <ul class="nav__menu">
-                            <li class="nav__item"><a href="https://buzznaire.github.io/" title="elitefont" rel="home" class="nav__link">Principal</a></li>
-                            <li class="nav__item"><a href="https://buzznaire.github.io/contact-us.html" class="nav__link">Contato</a></li>
-                            <li class="nav__item"><a href="https://buzznaire.github.io/about.html" class="nav__link">Sobre</a></li>
-                            <li class="nav__item"><a href="https://buzznaire.github.io/privacy-policy.html" class="nav__link">Política de privacidade</a></li>
+                            <li class="nav__item"><a href="letra-personalizada" title="Buzznaire " rel="home" class="nav__link">Principal</a></li>
+                            <li class="nav__item"><a href="contact-us.html" class="nav__link">Contato</a></li>
+                            <li class="nav__item"><a href="about.html" class="nav__link">Sobre</a></li>
+                            <li class="nav__item"><a href="privacy-policy.html" class="nav__link">Política de privacidade</a></li>
                         </ul>
                     </div>
                 </nav>
                 <div class="logo-box">
                     <a href="https://buzznaire.github.io/" class="logo-link">
-                        <svg class="logo"><use xlink:href="img/elitefont-icons.svg#logo-elitefont"></use></svg>
+                        <svg class="logo"><use xlink:href="img/Buzznaire -icons.svg#logo-Buzznaire "></use></svg>
                     </a>
                 </div>
             </div>
@@ -147,7 +83,7 @@
             <div class="header__bottom">
                 <input type="search" name="search" id="search" class="search fancytext" placeholder="Escreva aqui" />
                 <label for="search" class="search__label">
-                    <svg class="search__icon"><use xlink:href="img/elitefont-icons.svg#icon-search"></use></svg>
+                    <svg class="search__icon"><use xlink:href="img/Buzznaire -icons.svg#icon-search"></use></svg>
                 </label>
             </div>
         </header>
@@ -317,7 +253,7 @@
                         <div class="input-group-append"><span class="input-group-text copybutton" data-clipboard-action="copy" data-clipboard-target="#copy_39">Copie</span></div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control text-41" value="(っ◔◡◔)っ ♥ elitefont ♥" id="copy_40" readonly="readonly" />
+                        <input type="text" class="form-control text-41" value="(っ◔◡◔)っ ♥ Buzznaire  ♥" id="copy_40" readonly="readonly" />
                         <div class="input-group-append"><span class="input-group-text copybutton" data-clipboard-action="copy" data-clipboard-target="#copy_40">Copie</span></div>
                     </div>
                     <div class="input-group mb-3">
@@ -333,7 +269,7 @@
                         <div class="input-group-append"><span class="input-group-text copybutton" data-clipboard-action="copy" data-clipboard-target="#copy_43">Copie</span></div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control text-45" value="˜”*°•.˜”*°• elitefont •°*”˜.•°*”˜" id="copy_44" readonly="readonly" />
+                        <input type="text" class="form-control text-45" value="˜”*°•.˜”*°• Buzznaire  •°*”˜.•°*”˜" id="copy_44" readonly="readonly" />
                         <div class="input-group-append"><span class="input-group-text copybutton" data-clipboard-action="copy" data-clipboard-target="#copy_44">Copie</span></div>
                     </div>
                     <div class="input-group mb-3">
@@ -520,9 +456,9 @@
             </div>
         </main>
         <footer class="footer"><p class="copyright">Copyright © 2024 Buzznaire | Todos os direitos reservados</p></footer>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/script-main.js"></script>
-        <script src="/js/script-sub.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/script-main.js"></script>
+        <script src="js/script-sub.js"></script>
 
     
     </body>
